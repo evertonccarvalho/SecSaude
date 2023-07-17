@@ -4,7 +4,7 @@ import register from "../views/Register.vue";
 import Login from "../views/Login.vue";
 import axios from "axios";
 import Edit from "../views/Edit.vue";
-import Ssa2 from "../components/Ssa2.vue";
+
 import NascidosVIvos from "../components/NascidosVivos.vue";
 import PowerBiDashboard from "../components/PowerBiDashboard.vue";
 import home from "../views/Home";
@@ -104,11 +104,7 @@ const routes = [
         component: EditObitos,
         //// beforeEnter: AdminAuth
       },
-      {
-        path: "/Ssa2",
-        name: "ssa2",
-        component: Ssa2,
-      },
+
       {
         path: "/Nascidosvivos",
         name: "nascidosvivos",
