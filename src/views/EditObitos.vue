@@ -132,7 +132,7 @@
               type="text"
               placeholder="Causa"
               maxlength="2000"
-              v-model="Causa"
+              v-model="causa"
             />
           </div>
         </div>
@@ -192,7 +192,7 @@ export default {
         this.prontuario = res.data.prontuario;
         this.datadoobito = res.data.datadoobito;
         this.localdoobito = res.data.localdoobito;
-        this.Causa = res.data.Causa;
+        this.causa = res.data.causa;
         this.id = res.data.id;
       })
       .catch((err) => {
@@ -212,7 +212,7 @@ export default {
       prontuario: 0,
       datadoobito: 0,
       localdoobito: "",
-      Causa: "",
+      causa: "",
       error: undefined,
       deucerto: undefined,
       id: -1,
@@ -240,7 +240,7 @@ export default {
             prontuario: this.prontuario,
             datadoobito: this.datadoobito,
             localdoobito: this.localdoobito,
-            Causa: this.Causa,
+            causa: this.causa,
             id: this.id,
           },
           req
